@@ -1,0 +1,90 @@
+.nav {
+
+    height: 8vh;
+    width: 100vw;
+    /* background-color: #FFFFFF; */
+    background-color: grey;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: aqua;
+}
+
+.leftSide {
+    display: flex;
+    float: left;
+    margin-left: 17.5vw;
+}
+
+.rightSide {
+    display: flex;
+    float: right;
+    margin-right: 17.5vw;
+}
+
+.logoContainer {
+    height: 8vh;
+    width: 10vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: forestgreen;
+}
+
+.logo {
+
+}
+
+.categoryContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 8vh;
+    width: 15vw;
+    
+    border-style: solid;
+    border-width: 1px;
+    border-color: yellow;
+}
+
+.category {
+    display: inline-block;
+    margin-left: 20px;
+
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, "Noto Sans", Roboto, Arial, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Noto Sans CJK JP", Osaka, Meiryo, メイリオ, "MS PGothic", "MS Pゴシック", "Hiragino Sans GB", "Arial Unicode MS", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: rgb(27, 27, 27);
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 8vh;
+    width: 20vw;
+
+    border-style: solid;
+    border-width: 1px;
+    border-color: aquamarine;
+}
+
+.userButton {
+    display: inline-block;
+    margin-left: 10px;
+
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, "Noto Sans", Roboto, Arial, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Noto Sans CJK JP", Osaka, Meiryo, メイリオ, "MS PGothic", "MS Pゴシック", "Hiragino Sans GB", "Arial Unicode MS", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: rgb(27, 27, 27);
+    font-size: 12px;
+    line-height: 19px;
+}

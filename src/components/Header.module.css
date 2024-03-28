@@ -1,0 +1,31 @@
+.header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100vw;
+    height: 40px;
+    background-color: #F4F4F4;
+}
+
+.linksContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 17.5vw;
+
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+.links {
+    font-family: "Helvetica Neue", HelveticaNeue, Helvetica, "Noto Sans", Roboto, Arial, "Hiragino Sans", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "Noto Sans CJK JP", Osaka, Meiryo, メイリオ, "MS PGothic", "ＭＳ Ｐゴシック", "Hiragino Sans GB", "Arial Unicode MS", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(27, 27, 27);
+    font-size: 14px;
+    line-height: 17px;
+
+    text-decoration: none;
+    margin-left: 10px;
+}
