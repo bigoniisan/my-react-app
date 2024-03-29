@@ -10,6 +10,17 @@
     border-color: aqua;
 }
 
+/* @media screen and (min-width: 768px) {
+    .leftSide {
+        width: 100%;
+        margin-left: 17.5vw;
+    }
+    .rightSide {
+        width: 100%;
+        margin-right: 17.5vw;
+    }
+} */
+
 .leftSide {
     display: flex;
     float: left;
@@ -45,6 +56,7 @@
     align-items: center;
 
     height: 8vh;
+    min-width: 15vw;
     width: 15vw;
     
     border-style: solid;
