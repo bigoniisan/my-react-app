@@ -1,7 +1,8 @@
 .header {
+    overflow: hidden;
     display: flex;
     justify-content: flex-end;
-    width: 100vw;
+    width: 99vw;
     height: 40px;
     background-color: #F4F4F4;
 }

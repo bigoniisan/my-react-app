@@ -6,7 +6,7 @@ function Navbar() {
         <nav className={styles.nav}>
             <div className={styles.leftSide}>
                 <div className={styles.logoContainer}>
-                    <img className={styles.logo} src="#" alt="logo" />
+                    <img className={styles.logo} src="https://i.imgur.com/qLQiUgJ.png" alt="logo" />
                 </div>
                 <div className={styles.categoryContainer}>
                     <div className={styles.category}>WOMEN</div>

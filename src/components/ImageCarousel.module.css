@@ -1,13 +1,17 @@
 .carouselContainer {
     position: relative;
+    overflow: hidden;
+    
 }
 
 .carouselImage {
     overflow-x: hidden;
     overflow-y: hidden;
     width: 100vw;
-    height: 90vh;
-    z-index: 1;
+    height: 95vh;
+    /* why does the dot opacity change when this changes? */
+    opacity: 1;
+    z-index: -1;
 }
 
 .prevSlide, .nextSlide {
@@ -16,8 +20,8 @@
     align-items: center;
 
     position: absolute;
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     z-index: 10;
     top: 50%;
 
@@ -30,6 +34,21 @@
 
 .nextSlide {
     right: 0;
+}
+
+.leftArrow, .rightArrow {
+    border: solid #FFFFFF;
+    /* top right bottom left */
+    border-width: 2px 2px 0px 0px;
+    margin-left: 10px;
+    padding: 15px;
+    transform: rotate(-135deg);
+    /* box-shadow: 0 2px 1px 1px rgba(54, 52, 52, 0.849); */
+}
+
+.rightArrow {
+    margin-right: 10px;
+    transform: rotate(45deg);
 }
 
 .imageDotContainer {
@@ -45,11 +64,23 @@
 }
 
 .imageDot {
-    height: 15px;
-    width: 15px;
+    height: 8px;
+    width: 8px;
     margin: 0 2px;
-    background-color: #bbb;
+    margin-left: 10px;
+    background-color: white;
     border-radius: 50%;
+    box-shadow: 0 2px 1px 1px rgba(54, 52, 52, 0.849);
     display: inline-block;
-    transition: background-color 0.6s ease;
+}
+
+.largeImageDot {
+    height: 16px;
+    width: 16px;
+    margin: 0 2px;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 1px rgba(54, 52, 52, 0.849);
+    display: inline-block;
 }

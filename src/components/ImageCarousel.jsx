@@ -29,18 +29,29 @@ function ImageCarousel() {
         setCurrentImageIndex(slide);
     }
 
+    function getDotSize(slide) {
+        if (slide === currentImageIndex) {
+            return `${styles.largeImageDot}`;
+        }
+        return `${styles.imageDot}`;
+    }
+
     return (
         <div className={styles.carouselContainer}>
-            <div className={styles.prevSlide} onClick={() => prevSlide()}>Prev</div>
-            <div className={styles.nextSlide} onClick={() => nextSlide()}>Next</div>
+            <div className={styles.prevSlide} onClick={() => prevSlide()}>
+                <div className={styles.leftArrow}></div>
+            </div>
+            <div className={styles.nextSlide} onClick={() => nextSlide()}>
+                <div className={styles.rightArrow}></div>
+            </div>
             <div className={styles.carouselImage} 
                 style={ {backgroundImage: `url(${currentImageUrl})`} }>
             </div>
             <div className={styles.imageDotContainer}>
-                <div className={styles.imageDot} onClick={() => goToSlide(0)}></div>
-                <div className={styles.imageDot} onClick={() => goToSlide(1)}></div>
-                <div className={styles.imageDot} onClick={() => goToSlide(2)}></div>
-                <div className={styles.imageDot} onClick={() => goToSlide(3)}></div>
+                <div className={getDotSize(0)} onClick={() => goToSlide(0)}></div>
+                <div className={getDotSize(1)} onClick={() => goToSlide(1)}></div>
+                <div className={getDotSize(2)} onClick={() => goToSlide(2)}></div>
+                <div className={getDotSize(3)} onClick={() => goToSlide(3)}></div>
             </div>
         </div>
     )

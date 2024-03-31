@@ -1,9 +1,9 @@
 .nav {
+    overflow: hidden;
 
     height: 8vh;
-    width: 100vw;
-    /* background-color: #FFFFFF; */
-    background-color: grey;
+    width: 99vw;
+    background-color: #FFFFFF;
 
     border-style: solid;
     border-width: 1px;
@@ -47,7 +47,8 @@
 }
 
 .logo {
-
+    height: 8vh;
+    width: 10vw;
 }
 
 .categoryContainer {
