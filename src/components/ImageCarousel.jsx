@@ -2,18 +2,18 @@ import { useState } from "react";
 import styles from "./ImageCarousel.module.css"
 
 // should take an array of images?
-function ImageCarousel() {
+function ImageCarousel(props) {
 
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
+    
     const carouselImages = [
         "https://images.pexels.com/photos/247599/pexels-photo-247599.jpeg",
         "https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg",
         "https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg",
         "https://images.pexels.com/photos/772429/pexels-photo-772429.jpeg"
     ];
-
     let currentImageUrl = carouselImages[currentImageIndex];
+    //  useRef returns an object, {current: null}
 
     function prevSlide() {
         const prevIndex = (currentImageIndex - 1) % carouselImages.length;
